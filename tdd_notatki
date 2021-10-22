@@ -2,16 +2,19 @@ TDD notatki:
 
 cykl RedGreenRefactor
 
-Tworzymy test FUNCKJONALNY jezeli nie przechodzi tworzymy <b>conajmniej</b> jeden test JEDNOSTKOWY aby stworzyc brakujacy kod;
+Tworzymy test FUNCKJONALNY jezeli nie przechodzi tworzymy <b>conajmniej</b> jeden test JEDNOSTKOWY
+aby stworzyc brakujacy kod;
 tworzymy unit test, test jednostkowy nie przechodzi-> dodajemy minimalna ilosc kodu-> uruchamiamy test*(1)...
-uruchamiamy testy funkcjonalne. jezeli nie przechodza... ^^ jezeli przechodza dodajemy kolejne.
+uruchamiamy testy funkcjonalne; jezeli nie przechodza... ^^ jezeli przechodza dodajemy kolejne.
 
 'Testy  funkcjonalne  powinny  pomóc  w  przygotowaniu  aplikacji  oferującej  odpowiednią
 funkcjonalność i gwarantują,  że nigdy przypadkowo jej nie zepsujesz. Z kolei testy jed-
 nostkowe powinny pomóc w utworzeniu kodu przejrzystego i pozbawionego błędów.'
 
+self.fail -> aby konczyc na red i wiedzeic gdzie zaczac kolejny cykl RGR dla testow acc
+
 ------------------------------------------------------------------------------------------------------------------------
-*(1) moze wymagac kilku cykli aby w koncu test fukcnjoalny zostal spasowany
+*(1) moze wymagac kilku cykli aby w koncu test funkcjonalny zostal spasowany
 
 
 ========================================================================================================================
