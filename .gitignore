@@ -1,3 +1,4 @@
 /superlists/db.sqlite3
 /superlists/settings.py
+/geckodriver.log
 *.log
