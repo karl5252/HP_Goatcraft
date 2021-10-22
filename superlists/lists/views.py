@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def home_page(request):
-    return HttpResponse('<html><title>Lista rzeczy do zrobienia</title></html>')
+    return HttpResponse('<html><title>Listy rzeczy do zrobienia</title></html>')

@@ -16,7 +16,7 @@ class SmokeTest(TestCase):
         request = HttpRequest()
         response = home_page(request)
         self.assertTrue(response.content.startswith(b'<html>'))
-        self.assertIn(b'<title>Lista rzeczy do zrobienia</title>', response.content)
+        self.assertIn(b'<title>Listy rzeczy do zrobienia</title>', response.content)
         self.assertTrue(response.content.endswith(b'</html>'))
 
 
