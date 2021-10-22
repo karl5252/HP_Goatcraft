@@ -1,0 +1,35 @@
+TDD notatki:
+
+cykl RedGreenRefactor
+
+Tworzymy test FUNCKJONALNY jezeli nie przechodzi tworzymy <b>conajmniej</b> jeden test JEDNOSTKOWY aby stworzyc brakujacy kod;
+tworzymy unit test, test jednostkowy nie przechodzi-> dodajemy minimalna ilosc kodu-> uruchamiamy test*(1)...
+uruchamiamy testy funkcjonalne. jezeli nie przechodza... ^^ jezeli przechodza dodajemy kolejne.
+
+'Testy  funkcjonalne  powinny  pomóc  w  przygotowaniu  aplikacji  oferującej  odpowiednią
+funkcjonalność i gwarantują,  że nigdy przypadkowo jej nie zepsujesz. Z kolei testy jed-
+nostkowe powinny pomóc w utworzeniu kodu przejrzystego i pozbawionego błędów.'
+
+------------------------------------------------------------------------------------------------------------------------
+*(1) moze wymagac kilku cykli aby w koncu test fukcnjoalny zostal spasowany
+
+
+========================================================================================================================
+DJANGO notatki:
+tworzymy folder glowny (mkdir) i przechodzimy do niego
+zaczynamy od django-admin startproject <NAZWA>
+testowo uruchamiamy serwer python manage.py runserver  (localhost 8000)
+* aby dodac sub aplikacje uzywamy django-admin startapp <NAZWA>
+python manage.py test  -> wywolujemy test runner django
+------------------------------------------------------------------------------------------------------------------------
+Sposób działania Django przedstawia się mniej więcej następująco:
+ 1. Otrzymano żądanie HTTP do określonego adresu URL.
+ 2. Wykorzystując pewne reguły, Django próbuje ustalić, która funkcja widoku powinna zająć
+się obsługą żądania (to nosi nazwę analizy adresu URL).
+ 3. Funkcja widoku przetwarza żądanie i zwraca odpowiedź HTTP.
+
+Wobec tego konieczne jest przetestowanie dwóch rzeczy:
+  Czy adres URL dla katalogu głównego witryny (/) można przełożyć na konkretną funkcję
+widoku?
+  Czy wspomniana funkcja widoku może zwrócić kod HTML, który pozwoli na zaliczenie
+testu funkcjonalnego?
